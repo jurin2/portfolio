@@ -286,18 +286,22 @@
     .about .about-conts .skills{
         display: flex;
         flex-flow: column nowrap;
+        align-items: center;
     }
     .about .about-conts .skill-conts{
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: column nowrap;
         width: 50%;
     }
     .about .about-conts .skill-conts .skill{
-        padding-right:20px;
+        padding-right:0;
         text-align: center;
+        display: flex;
+        flex-flow: column nowrap;
+        margin-bottom: 15px;
     }
     .about .about-conts .skill-conts .skill img{
-        width: 70px;
+        width: 160px;
         padding-bottom: 15px;
     }
     .about .about-conts .skill-conts .skill:last-child{
@@ -305,7 +309,7 @@
     }
     .about .about-conts .skill-conts .skill span{
         text-align: center;
-        font-size: 0.7em;
+        font-size: 1.2em;
     }
 
     /* SECTION PORTFOLIO */
@@ -327,7 +331,7 @@
     }
     .portfolio .sec-conts .port-tit ul li{
         font-weight: 600;
-        font-size: 1.2em;
+        font-size: 0.9em;
         padding: 0 10px 10px;
         cursor: pointer;
         color: #222;
@@ -423,7 +427,7 @@
     }
     .contact .contact-box p:first-child{
         font-weight: 500;
-        font-size: 3em;
+        font-size: 2.2em;
         cursor: pointer;
     }
     .contact .contact-box p:first-child:hover{
@@ -464,7 +468,7 @@
     }
     
     /* 반응형 */
-    @media (min-width:1200px){
+    @media (min-width:1201px){
         .container{
             padding: 0 50px;
         }
@@ -478,16 +482,16 @@
             padding-right:15px;
         }
         .about .about-conts .skill-conts .skill img{
-            width: 90px;
+            width: 120px;
             padding-bottom: 15px;
         }
         .about .about-conts .skill-conts .skill span{
-            font-size: 0.8em;
+            font-size: 1.2em;
         }
         
     }
 
-    @media (min-width:940px){
+    @media (min-width:941px){
         .about .sec-conts{
             display: flex;
             flex-flow: row nowrap;
@@ -496,7 +500,7 @@
         }
     }
 
-    @media (min-width:768px){
+    @media (min-width:769px){
         /* header */
         .header h1{
             border: 2px solid #fff;
@@ -540,7 +544,15 @@
         .about .about-conts .profile-conts{
             justify-content: flex-start;
         }
-        
+        /* about */
+        .about .about-conts .skill-conts .skill img{
+            width: 120px;
+            padding-bottom: 15px;
+        } 
+        .about .about-conts .skill-conts .skill span{
+            text-align: center;
+            font-size: 1.2em;
+        }
 
         /* portfolio */
         .portfolio .port-conts .port .port-img{
@@ -556,23 +568,43 @@
         }
     }
     
-    @media (min-width:560px){
+    @media (min-width:561px){
         .intro-txt p{
             font-size: 4em;
         }   
 
         /* about */
+        .about .about-conts .skills{
+            align-items: flex-start;
+        }
+        .about .about-conts .skill-conts{
+            display: flex;
+            flex-flow: row nowrap;
+            width: 50%;
+        }
+        .about .about-conts .skill-conts .skill{
+            padding-right:20px;
+            text-align: center;
+            display: block;
+            margin-bottom: 0;
+        }
         .about .about-conts .skill-conts .skill img{
-            width: 120px;
+            width: 100px;
             padding-bottom: 15px;
         } 
         .about .about-conts .skill-conts .skill span{
             text-align: center;
-            font-size: 1em;
+            font-size: 0.9em;
         }
 
         /* portfolio */
         .portfolio .sec-conts .port-tit ul li{
             font-size: 1.6em;
+        }
+
+        .contact .contact-box p:first-child{
+            font-weight: 500;
+            font-size: 4.5em;
+            cursor: pointer;
         }
     }
