@@ -351,6 +351,9 @@
         justify-content: center;
         align-items: center;
     }
+    .portfolio .port-conts .subway-prolist{
+        font-size: 0.85em;
+    }
     .portfolio .port-conts .port.active{
         display: flex;
     }
@@ -382,6 +385,7 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
+        align-items: center;
         font-weight: 400;
         font-size: 1.1em;
         padding: 5px 0;

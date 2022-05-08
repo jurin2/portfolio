@@ -11,8 +11,8 @@
     })
 
 // 클릭시 홈페이지 이동
-let githubURL = ['https://github.com/jurin2/indigo_m','https://github.com/jurin2/travel','https://github.com/jurin2/hollys','https://github.com/jurin2/paikdabang','https://github.com/jurin2/megabox'];
-let siteURL = ['https://jurin2.github.io/indigo_m','https://jurin2.github.io/travel','https://jurin2.github.io/hollys','https://jurin2.github.io/paikdabang','https://jurin2.github.io/megabox'];
+let githubURL = ['https://github.com/jurin2/indigo_m','https://github.com/jurin2/travel','https://github.com/jurin2/hollys','https://github.com/jurin2/paikdabang','https://github.com/jurin2/megabox','https://github.com/jurin2/subway'];
+let siteURL = ['https://jurin2.github.io/indigo_m','https://jurin2.github.io/travel','https://jurin2.github.io/hollys','https://jurin2.github.io/paikdabang','https://jurin2.github.io/megabox','https://jurin2.github.io/subway/build/index.html'];
 let btnGithub = document.getElementsByClassName('btnGithub');
 let btnSite = document.getElementsByClassName('btnSite');
 
